@@ -1,0 +1,36 @@
+{
+  "name": "منصة الأستاذ مصطفى عيد الصافي",
+  "short_name": "منصة مصطفى عيد",
+  "description": "سبورة تفاعلية وقارئ PDF - معلم اللغة العربية",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "ar",
+  "dir": "rtl",
+  "background_color": "#0f172a",
+  "theme_color": "#064e3b",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "./index.html",
+      "accept": {
+        "application/pdf": [
+          ".pdf"
+        ]
+      }
+    }
+  ]
+}

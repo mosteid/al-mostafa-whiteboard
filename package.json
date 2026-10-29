@@ -1,0 +1,25 @@
+{
+  "name": "mostafa-eid-board",
+  "private": true,
+  "version": "3.0.0",
+  "type": "module",
+  "scripts": {
+    "vendor": "node scripts/vendor.mjs",
+    "dev": "tauri dev",
+    "build": "npm run vendor && tauri build",
+    "icons": "tauri icon app-icon.png"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2",
+    "pdfjs-dist": "3.11.174",
+    "pdf-lib": "1.17.1",
+    "jspdf": "2.5.1",
+    "canvas-confetti": "1.6.0",
+    "@fortawesome/fontawesome-free": "6.5.1",
+    "@fontsource/cairo": "*",
+    "@fontsource/amiri": "*",
+    "@fontsource/aref-ruqaa": "*",
+    "@fontsource/noto-naskh-arabic": "*",
+    "@fontsource/tajawal": "*"
+  }
+}
