@@ -32,8 +32,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tagName: v1.0.2
-          releaseName: 'سبورة المصطفى v1.0.2'
+          tagName: v1.0.3
+          releaseName: 'سبورة المصطفى v1.0.3'
           releaseBody: 'تحديث حل مشكلة تشغيل ملفات الـ PDF'
           releaseDraft: false
           prerelease: false
