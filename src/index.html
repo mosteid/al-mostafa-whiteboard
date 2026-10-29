@@ -5800,9 +5800,6 @@ if ('launchQueue' in window) launchQueue.setConsumer(async (p) => { for (const h
     if (T.event && T.event.listen) T.event.listen('open-file', (e) => openPath(e.payload));
     try { const p = await T.core.invoke('launch_file'); if (p) setTimeout(() => openPath(p), 600); } catch (e) {}
 })();
-if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) navigator.serviceWorker.register('sw.js').catch(() => {});
-})();
-
 /* =====================================================================
    V3 KEYS — اختصارات قابلة للتعديل + كشاف تركيز ثابت قابل للسحب + قفل أقوى
    ===================================================================== */
