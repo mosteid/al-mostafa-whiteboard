@@ -24,13 +24,16 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Build Vendor Files (PDF.js)
+        run: npm run vendor
+
       - name: Build Tauri app
         uses: tauri-apps/tauri-action@v0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tagName: v1.0.0
-          releaseName: 'سبورة المصطفى v1.0.0'
-          releaseBody: 'نسخة تطبيق سبورة المصطفى لنظام ويندوز'
+          tagName: v1.0.1
+          releaseName: 'سبورة المصطفى v1.0.1'
+          releaseBody: 'تحديث حل مشكلة تشغيل ملفات الـ PDF'
           releaseDraft: false
           prerelease: false
